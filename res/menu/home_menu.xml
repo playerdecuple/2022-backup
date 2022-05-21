@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HOME" />
+    <item
+        android:id="@+id/release"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_av_timer_24"
+        android:title="공개예정" />
+    <item
+        android:id="@+id/download"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_vertical_align_bottom_24"
+        android:title="다운로드" />
+    <item
+        android:id="@+id/profile"
+        android:title="프로필"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="165dp"
+    android:layout_height="165dp"
+    android:background="@drawable/profile_button" >
+
+    <TextView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/profile_image"
+        android:text="김"
+        android:fontFamily="@font/notosans_bold"
+        android:textSize="40dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:includeFontPadding="false"/>
+    
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:text="김대중"
+        android:fontFamily="@font/notosans_medium"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:includeFontPadding="false" />
+
+</LinearLayout>

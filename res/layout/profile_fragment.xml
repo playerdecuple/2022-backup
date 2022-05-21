@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="349dp"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="88dp"
+                    android:fontFamily="@font/notosans_bold"
+                    android:letterSpacing="-0.05"
+                    android:text="프로필"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ScrollView
+                    android:id="@+id/scrollView3"
+                    android:layout_width="348dp"
+                    android:layout_height="143dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/stroke_helper"
+                    android:padding="10dp"
+                    android:fillViewport="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.492"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                        <GridView
+                            android:id="@+id/profile_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:horizontalSpacing="8dp"
+                            android:numColumns="5"
+                            android:orientation="horizontal"
+                            android:verticalSpacing="8dp">
+
+
+                        </GridView>
+
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/profile_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/button_wide"
+                    android:drawableStart="@drawable/ic_baseline_person_add_alt_1_24"
+                    android:fontFamily="@font/notosans_medium"
+                    android:letterSpacing="-0.05"
+                    android:paddingStart="20dp"
+                    android:text="프로필 추가"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.508"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:paddingBottom="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_add">
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="일반 설정"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="22dp"
+                            android:fontFamily="@font/notosans_bold"/>
+
+                        <Button
+                            android:id="@+id/profile_modify"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_person_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="프로필 수정"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                        <Button
+                            android:id="@+id/change_lang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_language_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="언어 변경"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                        <Button
+                            android:id="@+id/connect_device"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_smartphone_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="새 기기 연결하기"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                        <Button
+                            android:id="@+id/security"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_security_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="앱 권한 설정"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                        <Button
+                            android:id="@+id/logout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_exit_to_app_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="로그아웃"
+                            android:textAlignment="viewStart"
+                            android:textColor="#f44"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="앱 정보"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="22dp"
+                            android:fontFamily="@font/notosans_bold"/>
+
+
+                        <Button
+                            android:id="@+id/privacy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_privacy_tip_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="개인정보 수집 및 이용"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                        <Button
+                            android:id="@+id/license"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_check_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="이용약관 동의"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                        <Button
+                            android:id="@+id/privacy_rule"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_warning_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="개인정보정보처리방침"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                        <Button
+                            android:id="@+id/opensource"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_source_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="오픈소스 활용 안내"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                        <Button
+                            android:id="@+id/contact"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/button_pref"
+                            android:drawablePadding="20dp"
+                            android:drawableStart="@drawable/ic_baseline_contact_support_24"
+                            android:fontFamily="@font/notosans_medium"
+                            android:letterSpacing="-0.05"
+                            android:paddingStart="20dp"
+                            android:text="기타 문의"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.508"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+
+                </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
